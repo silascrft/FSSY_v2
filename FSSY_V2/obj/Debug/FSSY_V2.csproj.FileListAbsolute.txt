@@ -1,0 +1,16 @@
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\bin\Debug\FSSY_V2.exe.config
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\bin\Debug\FSSY_V2.exe
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\bin\Debug\FSSY_V2.pdb
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2.csproj.AssemblyReference.cache
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\MainWindow.g.cs
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\App.g.cs
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2_MarkupCompile.cache
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2_MarkupCompile.lref
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\App.baml
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\MainWindow.baml
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2.g.resources
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2.Properties.Resources.resources
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2.csproj.GenerateResource.cache
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2.csproj.CoreCompileInputs.cache
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2.exe
+C:\Users\Silas\source\repos\FSSY_V2\FSSY_V2\obj\Debug\FSSY_V2.pdb

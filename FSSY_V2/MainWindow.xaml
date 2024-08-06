@@ -1,0 +1,254 @@
+﻿<Window x:Class="FSSY_V2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FSSY_V2"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="600"
+        Width="1000"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize">
+     
+        
+    
+      <Grid>
+         <Image Source="/Assets/MainFullRes.png" />
+        <Border Background="Transparent" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            
+        </Border>
+         <Grid
+             Height="450"
+             Width="400"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Bottom">
+            <StackPanel
+                VerticalAlignment="Center">
+               
+                <Button 
+                    Height="40"
+                    Width="400"
+                    HorizontalContentAlignment="Left"
+                    Padding="110,0,0,0"
+                    >
+                    
+                    <TextBlock>Play</TextBlock>
+                    
+                </Button>
+                <Button 
+                    Height="40"
+                    Width="400"
+                    HorizontalContentAlignment="Left"
+                    Padding="110,0,0,0">
+
+                    <TextBlock>Synchonize</TextBlock>
+
+                </Button>
+                <Button 
+                    Height="40"
+                    Width="400"
+                    HorizontalContentAlignment="Left"
+                    Padding="110,0,0,0">
+
+                    <TextBlock>Synchonize &amp; Play</TextBlock>
+
+                </Button>
+
+
+            </StackPanel>            
+         </Grid>
+         <Grid
+            Height="600"
+            Width="600" 
+            HorizontalAlignment="Right">
+
+            <StackPanel 
+                
+                Orientation="Vertical"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"      
+                Width="600"
+                >
+                <UniformGrid
+                    Columns="5"
+                    VerticalAlignment="Stretch"
+                    Height="560"
+                    Width="580">
+
+
+                    <CheckBox
+                    
+            x:Name="CheckBox1"
+            Content="1"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox2"
+            Content="2"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox3"
+            Content="3"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox4"
+            Content="4"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox5"
+            Content="5"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox6"
+            Content="6"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox7"
+            Content="7"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox8"
+            Content="8"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox9"
+            Content="9"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox10"
+            Content="10"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox11"
+            Content="11"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox12"
+            Content="12"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox13"
+            Content="13"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox14"
+            Content="14"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox15"
+            Content="15"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox16"
+            Content="16"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox17"
+            Content="17"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox18"
+            Content="18"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox19"
+            Content="19"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+                    <CheckBox
+                    
+            x:Name="CheckBox20"
+            Content="20"
+            Height="98"
+            Width="98">
+
+                    </CheckBox>
+
+
+                </UniformGrid>
+
+
+
+
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+    
+</Window>
