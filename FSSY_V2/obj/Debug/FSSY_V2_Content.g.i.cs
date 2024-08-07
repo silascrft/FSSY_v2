@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("styles/buttonstyles.xaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/trayicondefault.ico")]
 
 

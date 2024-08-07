@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +25,35 @@ namespace FSSY_V2
         {
             InitializeComponent();
         }
-    }
+        //Dragable Top-Bar
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ButtonState == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
+        //Minimize Button
+        private void MinimizeButton(object sender, RoutedEventArgs e)
+        { 
+            this.WindowState = WindowState.Minimized;
+        }
+
+
+        //Exit Button
+        private void ExitButton(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+
+        //Play Button
+        private void PlayButton(object sender, RoutedEventArgs e)
+        {
+            Process.Start(@"C:\Program Files (x86)\Farming Simulator 2022\x64\FarmingSimulator2022Game.exe");
+
+        }
+    }       
+
 }
