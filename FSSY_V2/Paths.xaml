@@ -10,7 +10,7 @@
 
     <Grid>
       <Image Source="/Assets/BackgroundClean.png"/>
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+      <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <UniformGrid Columns="5" VerticalAlignment="Bottom" Width="962" Height="562">
                 <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
                     <TextBlock Style="{StaticResource PathNrText}">
@@ -176,6 +176,6 @@
             
             
         </StackPanel>
-
+        <Button Style="{StaticResource PathBack}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="40,0,0,10" />
     </Grid>
 </Page>

@@ -19,9 +19,9 @@
     <Grid>
         <!-- Background image for the main window -->
         <Image Source="/Assets/MainFullRes.png" />
-        <TextBox Style="{StaticResource PathBox}" Height="98" Width="167" Panel.ZIndex="990">
-            
-        </TextBox>
+        
+        <Frame x:Name="PathFrame" Panel.ZIndex="998"/>
+
         <!-- Window Navigation Buttons -->
 
         <StackPanel VerticalAlignment="Top" 
@@ -41,7 +41,7 @@
         <Border Background="Transparent" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         </Border>
 
-        <!-- Grid positioned at the left, containing a stack panel with buttons -->
+        <!-- Grid left menu buttons -->
         <Grid Height="450" Width="400" HorizontalAlignment="Left" VerticalAlignment="Bottom">
             <StackPanel VerticalAlignment="Center">
 
@@ -59,20 +59,17 @@
                 <Button Style="{StaticResource MenuButton}" Height="40" Width="400" HorizontalContentAlignment="Left" Padding="110,0,0,0">
                     <TextBlock>Synchonize &amp; Play</TextBlock>
                 </Button>
+
+                <!-- Button: Paths -->
+                <Button Style="{StaticResource MenuButton}" Height="40" Width="400" HorizontalContentAlignment="Left" Padding="110,0,0,0" Click="PathsButton">
+                    <TextBlock>Paths</TextBlock>
+                </Button>
             </StackPanel>
         </Grid>
 
-        <!-- Grid positioned at the right, containing a stack panel with checkboxes -->
+        <!-- Grid right,stack panel checkboxes -->
         <Grid Height="600" Width="600" HorizontalAlignment="Right">
 
-            <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
-                <TextBlock Style="{StaticResource PathNrText}">
-        1
-                </TextBlock>
-                <TextBox Style="{StaticResource PathBox}" >
-                    Pfad/zur/batch/langerlangerlangerlanger/pfad
-                </TextBox>
-            </Grid>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600">
 
                 <!-- UniformGrid with 5 columns to layout checkboxes -->
@@ -141,8 +138,8 @@
                 </UniformGrid>
             </StackPanel>
         </Grid>
-        
+
     </Grid>
-    
-    
+
+
 </Window>

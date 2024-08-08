@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\SavegameStates.cs" />
     <Page Include="Paths.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -136,14 +137,16 @@
     <Resource Include="Assets\TrayIconDefault.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\BackgroundClean.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Buttons\Paths\PathsDefault.png" />
     <Resource Include="Assets\Buttons\Paths\PathsHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Buttons\Navigation\BackDefault.png" />
+    <Resource Include="Assets\Buttons\Navigation\BackHover.png" />
+    <Resource Include="Assets\Buttons\Navigation\BackPress.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
