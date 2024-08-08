@@ -1,0 +1,181 @@
+﻿<Page x:Class="FSSY_V2.Paths"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FSSY_V2"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="Paths">
+
+    <Grid>
+      <Image Source="/Assets/BackgroundClean.png"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <UniformGrid Columns="5" VerticalAlignment="Bottom" Width="962" Height="562">
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                1
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        2
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        3
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        4
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        5
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        6
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        7
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        8
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        9
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        10
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        11
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        12
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        13
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        14
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        15
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        16
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        17
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        18
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        19
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                    <TextBlock Style="{StaticResource PathNrText}">
+                        20
+                    </TextBlock>
+                    <TextBox Style="{StaticResource PathBox}" >
+                        Pfad/zur/batch
+                    </TextBox>
+                </Grid>
+            </UniformGrid>
+            
+            
+        </StackPanel>
+
+    </Grid>
+</Page>

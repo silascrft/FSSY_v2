@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/trayicondefault.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/buttons/paths/pathsdefault.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/buttons/paths/pathshover.png")]
 
 
