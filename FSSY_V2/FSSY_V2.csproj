@@ -58,7 +58,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\SavegameStates.cs" />
+    <Compile Include="src\classes\CheckBoxState.cs" />
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\classes\PathsData.cs" />
+    <Compile Include="src\classes\SavegameStates.cs" />
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Paths.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,6 +156,9 @@
     <Resource Include="Assets\Buttons\Navigation\BackDefault.png" />
     <Resource Include="Assets\Buttons\Navigation\BackHover.png" />
     <Resource Include="Assets\Buttons\Navigation\BackPress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

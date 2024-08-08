@@ -11,8 +11,8 @@
     <Grid>
       <Image Source="/Assets/BackgroundClean.png"/>
       <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <UniformGrid Columns="5" VerticalAlignment="Bottom" Width="962" Height="562">
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+            <UniformGrid x:Name="PathsGrid" Columns="5" VerticalAlignment="Bottom" Width="962" Height="562">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                 1
                     </TextBlock>
@@ -20,7 +20,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         2
                     </TextBlock>
@@ -28,7 +28,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         3
                     </TextBlock>
@@ -36,7 +36,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         4
                     </TextBlock>
@@ -44,7 +44,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         5
                     </TextBlock>
@@ -52,7 +52,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         6
                     </TextBlock>
@@ -60,7 +60,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         7
                     </TextBlock>
@@ -68,7 +68,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         8
                     </TextBlock>
@@ -76,7 +76,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         9
                     </TextBlock>
@@ -84,7 +84,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         10
                     </TextBlock>
@@ -92,7 +92,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         11
                     </TextBlock>
@@ -100,7 +100,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         12
                     </TextBlock>
@@ -108,7 +108,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         13
                     </TextBlock>
@@ -116,7 +116,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         14
                     </TextBlock>
@@ -124,7 +124,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         15
                     </TextBlock>
@@ -132,7 +132,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         16
                     </TextBlock>
@@ -140,7 +140,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         17
                     </TextBlock>
@@ -148,7 +148,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         18
                     </TextBlock>
@@ -156,7 +156,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         19
                     </TextBlock>
@@ -164,7 +164,7 @@
                         Pfad/zur/batch
                     </TextBox>
                 </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}"  Panel.ZIndex="998">
+                <Grid Style="{StaticResource HoverImageGridStyle}">
                     <TextBlock Style="{StaticResource PathNrText}">
                         20
                     </TextBlock>
@@ -176,6 +176,6 @@
             
             
         </StackPanel>
-        <Button Style="{StaticResource PathBack}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="40,0,0,10" />
+        <Button Style="{StaticResource PathBack}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="40,0,0,10" Click="NavigateBack" />
     </Grid>
 </Page>

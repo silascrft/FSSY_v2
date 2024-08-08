@@ -18,126 +18,32 @@
     <!-- Main container for the window's content -->
     <Grid>
         <!-- Background image for the main window -->
-        <Image Source="/Assets/MainFullRes.png" />
-        
-        <Frame x:Name="PathFrame" Panel.ZIndex="998"/>
+        <Frame x:Name="MainFrame" Panel.ZIndex="100" NavigationUIVisibility="Hidden"/>
 
         <!-- Window Navigation Buttons -->
-
-        <StackPanel VerticalAlignment="Top" 
-                    HorizontalAlignment="Right" 
-                    Orientation="Horizontal"
-                    Height="21.3"
-                    Width="41.5"
-                    Panel.ZIndex="999">
-
+        <StackPanel
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Right" 
+            Orientation="Horizontal"
+            Height="21.3"
+            Width="41.5"
+            Panel.ZIndex="999"
+            >
             <Button Style="{StaticResource MinimizeButton}" Height="19" Width="19" Margin="0,0,0,0.5" Click="MinimizeButton"/>
-
             <Button Style="{StaticResource ExitButton}" Height="19" Width="19" Margin="2,0,0,0" Click="ExitButton"/>
-
         </StackPanel>
 
         <!-- Transparent border at the top of the window, height of 30 pixels -->
-        <Border Background="Transparent" Height="30" VerticalAlignment="Top" HorizontalAlignment="Stretch" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Border 
+            Background="Transparent" 
+            Height="30" VerticalAlignment="Top" 
+            HorizontalAlignment="Stretch" 
+            MouseLeftButtonDown="Border_MouseLeftButtonDown"
+            Panel.ZIndex="998"
+            >
         </Border>
 
-        <!-- Grid left menu buttons -->
-        <Grid Height="450" Width="400" HorizontalAlignment="Left" VerticalAlignment="Bottom">
-            <StackPanel VerticalAlignment="Center">
 
-                <!-- Button: Play -->
-                <Button Style="{StaticResource MenuButton}" Height="40" Width="400" HorizontalContentAlignment="Left" Padding="110,0,0,0" Click="PlayButton">
-                    <TextBlock>Play</TextBlock>
-                </Button>
-
-                <!-- Button: Synchronize -->
-                <Button Style="{StaticResource MenuButton}" Height="40" Width="400" HorizontalContentAlignment="Left" Padding="110,0,0,0">
-                    <TextBlock>Synchonize</TextBlock>
-                </Button>
-
-                <!-- Button: Synchronize & Play -->
-                <Button Style="{StaticResource MenuButton}" Height="40" Width="400" HorizontalContentAlignment="Left" Padding="110,0,0,0">
-                    <TextBlock>Synchonize &amp; Play</TextBlock>
-                </Button>
-
-                <!-- Button: Paths -->
-                <Button Style="{StaticResource MenuButton}" Height="40" Width="400" HorizontalContentAlignment="Left" Padding="110,0,0,0" Click="PathsButton">
-                    <TextBlock>Paths</TextBlock>
-                </Button>
-            </StackPanel>
-        </Grid>
-
-        <!-- Grid right,stack panel checkboxes -->
-        <Grid Height="600" Width="600" HorizontalAlignment="Right">
-
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600">
-
-                <!-- UniformGrid with 5 columns to layout checkboxes -->
-                <UniformGrid Columns="5" VerticalAlignment="Stretch" Height="560" Width="580">
-
-                    <!-- Checkbox: 1 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox1" Content="1" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 2 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox2" Content="2" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 3 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox3" Content="3" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 4 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox4" Content="4" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 5 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox5" Content="5" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 6 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox6" Content="6" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 7 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox7" Content="7" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 8 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox8" Content="8" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 9 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox9" Content="9" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 10 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox10" Content="10" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 11 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox11" Content="11" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 12 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox12" Content="12" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 13 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox13" Content="13" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 14 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox14" Content="14" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 15 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox15" Content="15" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 16 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox16" Content="16" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 17 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox17" Content="17" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 18 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox18" Content="18" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 19 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox19" Content="19" Height="98" Width="98"></CheckBox>
-
-                    <!-- Checkbox: 20 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="checkBox20" Content="20" Height="98" Width="98"></CheckBox>
-
-                </UniformGrid>
-            </StackPanel>
-        </Grid>
 
     </Grid>
 
