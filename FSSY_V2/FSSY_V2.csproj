@@ -157,8 +157,5 @@
     <Resource Include="Assets\Buttons\Navigation\BackHover.png" />
     <Resource Include="Assets\Buttons\Navigation\BackPress.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
