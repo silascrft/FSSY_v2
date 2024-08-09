@@ -9,40 +9,27 @@ namespace FSSY_V2
     /// </summary>
     public partial class Menu : Page
     {
-
         private readonly SavegameStates _savegameStates;
-
-        public Menu()
-        {
+        public Menu() {
             InitializeComponent();
-            _savegameStates = new SavegameStates(); // Instanz der neuen Klasse erstellen
-            LoadCheckBoxStates(); // Zustände der CheckBoxes beim Start der Anwendung laden
+            _savegameStates = new SavegameStates();
+            LoadCheckBoxStates();
         }
 
-        // Event-Handler für die Schaltfläche zum Starten des Spiels
-        private void PlayButton(object sender, RoutedEventArgs e)
-        {
+        private void PlayButton(object sender, RoutedEventArgs e) {
             Process.Start(@"C:\Program Files (x86)\Farming Simulator 2022\x64\FarmingSimulator2022Game.exe"); // Spiel starten
         }
-        
-        private void SynchronizeButton(object sender, RoutedEventArgs e)
-        {
+        private void SynchronizeButton(object sender, RoutedEventArgs e) {
             //TODO implement
         }
-        private void SynchronizeAndPlayButton(object sender, RoutedEventArgs e)
-        {
+        private void SynchronizeAndPlayButton(object sender, RoutedEventArgs e) {
             SynchronizeButton(sender, e);
             PlayButton(sender, e);
         }
-
-        // Event-Handler für den Paths Button
-        private void PathsButton(object sender, RoutedEventArgs e)
-        {
+        private void PathsButton(object sender, RoutedEventArgs e) {
             var mainWindow = (MainWindow)Window.GetWindow(this);
             mainWindow.NavigateToPathPage();
         }
-
-
 
         public void SaveOnClose(object sender, System.ComponentModel.CancelEventArgs e)
         {

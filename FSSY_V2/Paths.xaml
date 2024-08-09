@@ -12,166 +12,26 @@
       <Image Source="/Assets/BackgroundClean.png"/>
       <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <UniformGrid x:Name="PathsGrid" Columns="5" VerticalAlignment="Bottom" Width="962" Height="562">
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                1
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        2
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        3
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        4
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        5
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        6
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        7
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        8
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        9
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        10
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        11
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        12
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        13
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        14
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        15
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        16
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        17
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        18
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        19
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
-                <Grid Style="{StaticResource HoverImageGridStyle}">
-                    <TextBlock Style="{StaticResource PathNrText}">
-                        20
-                    </TextBlock>
-                    <TextBox Style="{StaticResource PathBox}" >
-                        Pfad/zur/batch
-                    </TextBox>
-                </Grid>
+                <local:PathGridItem PathNumber="1" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="2" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="3" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="4" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="5" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="6" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="7" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="8" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="9" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="10" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="11" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="12" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="13" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="14" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="15" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="16" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="17" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="18" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="19" PathText="Pfad/zur/batch"/>
+                <local:PathGridItem PathNumber="20" PathText="Pfad/zur/batch"/>
             </UniformGrid>
             
             

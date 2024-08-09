@@ -15,9 +15,8 @@
         Icon="Assets/TrayIconDefault.ico"
         Closing="Window_Closing">
 
-    <!-- Main container for the window's content -->
+    <!-- Main Container -->
     <Grid>
-        <!-- Background image for the main window -->
         <Frame x:Name="MainFrame" Panel.ZIndex="100" NavigationUIVisibility="Hidden"/>
 
         <!-- Window Navigation Buttons -->
@@ -42,10 +41,5 @@
             Panel.ZIndex="998"
             >
         </Border>
-
-
-
     </Grid>
-
-
 </Window>

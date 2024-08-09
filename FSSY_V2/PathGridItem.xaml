@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="FSSY_V2.PathGridItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FSSY_V2">
+    <Grid>
+        <Grid Style="{StaticResource HoverImageGridStyle}">
+            <TextBlock Style="{StaticResource PathNrText}" Text="{Binding PathNumber}" />
+            <TextBox Style="{StaticResource PathBox}" Text="{Binding PathText}" />
+        </Grid>
+    </Grid>
+</UserControl>

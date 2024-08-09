@@ -10,32 +10,25 @@
 
     <Grid>
 
+        <!-- Background -->
         <Image Source="/Assets/MainFullRes.png" />
 
-        <!-- Grid left menu buttons -->
+        <!-- Menu Buttons -->
         <Grid Height="450" Width="400" HorizontalAlignment="Left" VerticalAlignment="Bottom">
             <StackPanel VerticalAlignment="Center">
-
-                <!-- Button: Play -->
                 <Button
                     Style="{StaticResource MenuButton}"
                     Click="PlayButton">
                     <TextBlock>Play</TextBlock>
                 </Button>
-
-                <!-- Button: Synchronize -->
                 <Button 
                     Style="{StaticResource MenuButton}">
                     <TextBlock>Synchronize</TextBlock>
                 </Button>
-
-                <!-- Button: Synchronize & Play -->
                 <Button 
                     Style="{StaticResource MenuButton}">
                     <TextBlock>Synchronize &amp; Play</TextBlock>
                 </Button>
-
-                <!-- Button: Paths -->
                 <Button
                     Style="{StaticResource MenuButton}"
                     Click="PathsButton">
@@ -44,95 +37,33 @@
             </StackPanel>
         </Grid>
 
-        <!-- Grid right,stack panel checkboxes -->
+        <!-- Checkboxes -->
         <Grid Height="600" Width="600" HorizontalAlignment="Right">
 
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600">
 
-                <!-- UniformGrid with 5 columns to layout checkboxes -->
+                <!-- Grid Column Layout -->
                 <UniformGrid Columns="5" VerticalAlignment="Stretch" Height="560" Width="580">
-
-                    <!-- Checkbox: 1 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox1" Content="1">
-                    </CheckBox>
-
-                    <!-- Checkbox: 2 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox2" Content="2">
-                    </CheckBox>
-
-                    <!-- Checkbox: 3 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox3" Content="3">
-                    </CheckBox>
-
-                    <!-- Checkbox: 4 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox4" Content="4">
-                    </CheckBox>
-
-                    <!-- Checkbox: 5 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox5" Content="5">
-                    </CheckBox>
-
-                    <!-- Checkbox: 6 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox6" Content="6">
-                    </CheckBox>
-
-                    <!-- Checkbox: 7 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox7" Content="7">
-                    </CheckBox>
-
-                    <!-- Checkbox: 8 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox8" Content="8">
-                    </CheckBox>
-
-                    <!-- Checkbox: 9 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox9" Content="9">
-                    </CheckBox>
-
-                    <!-- Checkbox: 10 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox10" Content="10">
-                    </CheckBox>
-
-                    <!-- Checkbox: 11 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox11" Content="11">
-                    </CheckBox>
-
-                    <!-- Checkbox: 12 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox12" Content="12" >
-                    </CheckBox>
-
-                    <!-- Checkbox: 13 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox13" Content="13" >
-                    </CheckBox>
-
-                    <!-- Checkbox: 14 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox14" Content="14">
-                    </CheckBox>
-
-                    <!-- Checkbox: 15 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox15" Content="15" >
-                    </CheckBox>
-
-                    <!-- Checkbox: 16 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox16" Content="16">
-                    </CheckBox>
-
-                    <!-- Checkbox: 17 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox17" Content="17">
-                    </CheckBox>
-
-                    <!-- Checkbox: 18 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox18" Content="18">
-                    </CheckBox>
-
-                    <!-- Checkbox: 19 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox19" Content="19">
-                    </CheckBox>
-
-                    <!-- Checkbox: 20 -->
-                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox20" Content="20"
-                              Width="98">
-                    </CheckBox>
-
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox1" Content="1"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox2" Content="2"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox3" Content="3"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox4" Content="4"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox5" Content="5"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox6" Content="6"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox7" Content="7"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox8" Content="8"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox9" Content="9"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox10" Content="10"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox11" Content="11"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox12" Content="12"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox13" Content="13"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox14" Content="14"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox15" Content="15"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox16" Content="16"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox17" Content="17"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox18" Content="18"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox19" Content="19"/>
+                    <CheckBox Style="{StaticResource SavegameCheckBox}" x:Name="CheckBox20" Content="20"/>
                 </UniformGrid>
             </StackPanel>
         </Grid>
