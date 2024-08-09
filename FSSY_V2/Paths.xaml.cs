@@ -1,20 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.ComponentModel;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace FSSY_V2
 {
@@ -24,7 +10,7 @@ namespace FSSY_V2
     public partial class Paths : Page
     {
 
-        private PathsManager _pathsManager;
+        private readonly PathsManager _pathsManager;
 
         public Paths()
         {
@@ -33,18 +19,18 @@ namespace FSSY_V2
             LoadPathsFromFile();
         }
 
-        public void SaveOnClose(object sender, CancelEventArgs e)
-        {
-            SavePaths();
-        }
-
         private void NavigateBack(object sender, RoutedEventArgs e)
         {
             var mainWindow = (MainWindow)Window.GetWindow(this);
             mainWindow.NavigateToMenuPage();
         }
 
-        public void SavePaths()
+        public void SaveOnClose(object sender, CancelEventArgs e)
+        {
+            SavePaths();
+        }
+
+        private void SavePaths()
         {
             _pathsManager.SavePathsToFile(PathsGrid);
         }

@@ -42,3 +42,4 @@ C:\Users\joeym\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\MainWindow.g.cs
 C:\Users\joeym\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\Menu.baml
 C:\Users\joeym\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\Paths.baml
 C:\Users\joeym\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\MainWindow.baml
+C:\Users\joeym\source\repos\FSSY_v2\FSSY_V2\obj\Debug\Styles\Styles.baml

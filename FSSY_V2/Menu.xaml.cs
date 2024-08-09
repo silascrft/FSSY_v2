@@ -1,28 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace FSSY_V2
 {
     /// <summary>
-    /// Interaktionslogik für Menu.xaml
+    /// Interaction logic for Menu.xaml
     /// </summary>
     public partial class Menu : Page
     {
 
-        private SavegameStates _savegameStates;
+        private readonly SavegameStates _savegameStates;
 
         public Menu()
         {
@@ -35,6 +23,16 @@ namespace FSSY_V2
         private void PlayButton(object sender, RoutedEventArgs e)
         {
             Process.Start(@"C:\Program Files (x86)\Farming Simulator 2022\x64\FarmingSimulator2022Game.exe"); // Spiel starten
+        }
+        
+        private void SynchronizeButton(object sender, RoutedEventArgs e)
+        {
+            //TODO implement
+        }
+        private void SynchronizeAndPlayButton(object sender, RoutedEventArgs e)
+        {
+            SynchronizeButton(sender, e);
+            PlayButton(sender, e);
         }
 
         // Event-Handler für den Paths Button
@@ -52,58 +50,56 @@ namespace FSSY_V2
         }
         private void SaveCheckBoxStates()
         {
-            CheckBoxState state = new CheckBoxState
+            var state = new CheckBoxState
             {
-                CheckBox1 = checkBox1.IsChecked ?? false,
-                CheckBox2 = checkBox2.IsChecked ?? false,
-                CheckBox3 = checkBox3.IsChecked ?? false,
-                CheckBox4 = checkBox4.IsChecked ?? false,
-                CheckBox5 = checkBox5.IsChecked ?? false,
-                CheckBox6 = checkBox6.IsChecked ?? false,
-                CheckBox7 = checkBox7.IsChecked ?? false,
-                CheckBox8 = checkBox8.IsChecked ?? false,
-                CheckBox9 = checkBox9.IsChecked ?? false,
-                CheckBox10 = checkBox10.IsChecked ?? false,
-                CheckBox11 = checkBox11.IsChecked ?? false,
-                CheckBox12 = checkBox12.IsChecked ?? false,
-                CheckBox13 = checkBox13.IsChecked ?? false,
-                CheckBox14 = checkBox14.IsChecked ?? false,
-                CheckBox15 = checkBox15.IsChecked ?? false,
-                CheckBox16 = checkBox16.IsChecked ?? false,
-                CheckBox17 = checkBox17.IsChecked ?? false,
-                CheckBox18 = checkBox18.IsChecked ?? false,
-                CheckBox19 = checkBox19.IsChecked ?? false,
-                CheckBox20 = checkBox20.IsChecked ?? false,
-                // Weitere CheckBoxes können hinzugefügt werden
+                CheckBox1 = CheckBox1.IsChecked ?? false,
+                CheckBox2 = CheckBox2.IsChecked ?? false,
+                CheckBox3 = CheckBox3.IsChecked ?? false,
+                CheckBox4 = CheckBox4.IsChecked ?? false,
+                CheckBox5 = CheckBox5.IsChecked ?? false,
+                CheckBox6 = CheckBox6.IsChecked ?? false,
+                CheckBox7 = CheckBox7.IsChecked ?? false,
+                CheckBox8 = CheckBox8.IsChecked ?? false,
+                CheckBox9 = CheckBox9.IsChecked ?? false,
+                CheckBox10 = CheckBox10.IsChecked ?? false,
+                CheckBox11 = CheckBox11.IsChecked ?? false,
+                CheckBox12 = CheckBox12.IsChecked ?? false,
+                CheckBox13 = CheckBox13.IsChecked ?? false,
+                CheckBox14 = CheckBox14.IsChecked ?? false,
+                CheckBox15 = CheckBox15.IsChecked ?? false,
+                CheckBox16 = CheckBox16.IsChecked ?? false,
+                CheckBox17 = CheckBox17.IsChecked ?? false,
+                CheckBox18 = CheckBox18.IsChecked ?? false,
+                CheckBox19 = CheckBox19.IsChecked ?? false,
+                CheckBox20 = CheckBox20.IsChecked ?? false,
             };
 
-            _savegameStates.Save(state); // Verwendung der neuen Klasse zum Speichern
+            _savegameStates.Save(state);
         }
         private void LoadCheckBoxStates()
         {
-            CheckBoxState state = _savegameStates.Load(); // Verwendung der neuen Klasse zum Laden
+            var state = _savegameStates.Load();
 
-            checkBox1.IsChecked = state.CheckBox1;
-            checkBox2.IsChecked = state.CheckBox2;
-            checkBox3.IsChecked = state.CheckBox3;
-            checkBox4.IsChecked = state.CheckBox4;
-            checkBox5.IsChecked = state.CheckBox5;
-            checkBox6.IsChecked = state.CheckBox6;
-            checkBox7.IsChecked = state.CheckBox7;
-            checkBox8.IsChecked = state.CheckBox8;
-            checkBox9.IsChecked = state.CheckBox9;
-            checkBox10.IsChecked = state.CheckBox10;
-            checkBox11.IsChecked = state.CheckBox11;
-            checkBox12.IsChecked = state.CheckBox12;
-            checkBox13.IsChecked = state.CheckBox13;
-            checkBox14.IsChecked = state.CheckBox14;
-            checkBox15.IsChecked = state.CheckBox15;
-            checkBox16.IsChecked = state.CheckBox16;
-            checkBox17.IsChecked = state.CheckBox17;
-            checkBox18.IsChecked = state.CheckBox18;
-            checkBox19.IsChecked = state.CheckBox19;
-            checkBox20.IsChecked = state.CheckBox20;
-            // Weitere CheckBoxes können geladen werden
+            CheckBox1.IsChecked = state.CheckBox1;
+            CheckBox2.IsChecked = state.CheckBox2;
+            CheckBox3.IsChecked = state.CheckBox3;
+            CheckBox4.IsChecked = state.CheckBox4;
+            CheckBox5.IsChecked = state.CheckBox5;
+            CheckBox6.IsChecked = state.CheckBox6;
+            CheckBox7.IsChecked = state.CheckBox7;
+            CheckBox8.IsChecked = state.CheckBox8;
+            CheckBox9.IsChecked = state.CheckBox9;
+            CheckBox10.IsChecked = state.CheckBox10;
+            CheckBox11.IsChecked = state.CheckBox11;
+            CheckBox12.IsChecked = state.CheckBox12;
+            CheckBox13.IsChecked = state.CheckBox13;
+            CheckBox14.IsChecked = state.CheckBox14;
+            CheckBox15.IsChecked = state.CheckBox15;
+            CheckBox16.IsChecked = state.CheckBox16;
+            CheckBox17.IsChecked = state.CheckBox17;
+            CheckBox18.IsChecked = state.CheckBox18;
+            CheckBox19.IsChecked = state.CheckBox19;
+            CheckBox20.IsChecked = state.CheckBox20;
         }
     }
 }

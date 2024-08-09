@@ -1,9 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Diagnostics;
+﻿using System;
 using System.IO;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace FSSY_V2
@@ -13,47 +10,50 @@ namespace FSSY_V2
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static readonly string FOLDER_PATH = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FSSY");
+        public static readonly string FolderPath =
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FSSY");
 
-        Paths paths = new Paths();
-        Menu menu = new Menu();
+        private readonly Paths _paths = new Paths();
+        private readonly Menu _menu = new Menu();
 
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(menu);    
+            MainFrame.Navigate(_menu);
         }
 
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ButtonState == MouseButtonState.Pressed)
             {
-                this.DragMove(); // Fenster bewegen
+                this.DragMove();
             }
         }
+
         private void MinimizeButton(object sender, RoutedEventArgs e)
         {
-            this.WindowState = WindowState.Minimized; // Fenster minimieren
+            this.WindowState = WindowState.Minimized;
         }
+
         private void ExitButton(object sender, RoutedEventArgs e)
         {
-            this.Close(); // Fenster schließen
+            this.Close();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            menu.SaveOnClose(sender, e);
-            paths.SaveOnClose(sender, e);
+            _menu.SaveOnClose(sender, e);
+            _paths.SaveOnClose(sender, e);
         }
 
         public void NavigateToPathPage()
         {
-            MainFrame.Navigate(paths);
+            MainFrame.Navigate(_paths);
         }
 
         public void NavigateToMenuPage()
         {
-            MainFrame.Navigate(menu);
+            MainFrame.Navigate(_menu);
         }
     }
 }

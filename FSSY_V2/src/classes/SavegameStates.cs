@@ -10,7 +10,7 @@ public class SavegameStates
 
     public SavegameStates()
     {
-        _folderPath = MainWindow.FOLDER_PATH;
+        _folderPath = MainWindow.FolderPath;
         _filePath = Path.Combine(_folderPath, "checkboxStates.json");
         Directory.CreateDirectory(_folderPath); // Ordner erstellen, falls er nicht existiert
     }

@@ -15,7 +15,7 @@ public class PathsManager
 
     public PathsManager()
     {
-        _folderPath = MainWindow.FOLDER_PATH;
+        _folderPath = MainWindow.FolderPath;
         _filePath = Path.Combine(_folderPath, "paths.json");
         Directory.CreateDirectory(_folderPath);
     }
