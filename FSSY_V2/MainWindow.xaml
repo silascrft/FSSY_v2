@@ -17,29 +17,28 @@
 
     <!-- Main Container -->
     <Grid>
-        <Frame x:Name="MainFrame" Panel.ZIndex="100" NavigationUIVisibility="Hidden"/>
+        <Frame x:Name="MainFrame" Panel.ZIndex="100" NavigationUIVisibility="Hidden" />
 
         <!-- Window Navigation Buttons -->
         <StackPanel
-            VerticalAlignment="Top" 
-            HorizontalAlignment="Right" 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
             Orientation="Horizontal"
             Height="21.3"
             Width="41.5"
-            Panel.ZIndex="999"
-            >
-            <Button Style="{StaticResource MinimizeButton}" Height="19" Width="19" Margin="0,0,0,0.5" Click="MinimizeButton"/>
-            <Button Style="{StaticResource ExitButton}" Height="19" Width="19" Margin="2,0,0,0" Click="ExitButton"/>
+            Panel.ZIndex="999">
+            <Button Style="{StaticResource MinimizeButton}" Height="19" Width="19" Margin="0,0,0,0.5"
+                    Click="MinimizeButton" />
+            <Button Style="{StaticResource ExitButton}" Height="19" Width="19" Margin="2,0,0,0" Click="ExitButton" />
         </StackPanel>
 
         <!-- Transparent border at the top of the window, height of 30 pixels -->
-        <Border 
-            Background="Transparent" 
-            Height="30" VerticalAlignment="Top" 
-            HorizontalAlignment="Stretch" 
+        <Border
+            Background="Transparent"
+            Height="30" VerticalAlignment="Top"
+            HorizontalAlignment="Stretch"
             MouseLeftButtonDown="Border_MouseLeftButtonDown"
-            Panel.ZIndex="998"
-            >
+            Panel.ZIndex="998">
         </Border>
     </Grid>
 </Window>
