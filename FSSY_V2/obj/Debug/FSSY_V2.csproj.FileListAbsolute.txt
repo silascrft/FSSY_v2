@@ -46,3 +46,9 @@ C:\Users\joeym\source\repos\FSSY_v2\FSSY_V2\obj\Debug\Styles\Styles.baml
 C:\Users\joeym\source\repos\FSSY_v2\FSSY_V2\obj\Debug\PathGridItem.g.cs
 C:\Users\joeym\source\repos\FSSY_v2\FSSY_V2\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\joeym\source\repos\FSSY_v2\FSSY_V2\obj\Debug\PathGridItem.baml
+C:\Users\Silas\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\Styles\Styles.baml
+C:\Users\Silas\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\Menu.g.cs
+C:\Users\Silas\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\PathGridItem.g.cs
+C:\Users\Silas\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Silas\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\Menu.baml
+C:\Users\Silas\Source\Repos\FSSY_v2\FSSY_V2\obj\Debug\PathGridItem.baml

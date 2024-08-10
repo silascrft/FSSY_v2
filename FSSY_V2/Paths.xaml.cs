@@ -19,12 +19,22 @@ namespace FSSY_V2
             LoadPathsFromFile();
         }
 
+        //Back Button Events
         private void NavigateBack(object sender, RoutedEventArgs e)
         {
-            var mainWindow = (MainWindow)Window.GetWindow(this);
-            mainWindow.NavigateToMenuPage();
+            
+            {
+                SavePaths();
+            }
+
+            {
+                var mainWindow = (MainWindow)Window.GetWindow(this);
+                mainWindow.NavigateToMenuPage();
+            }
         }
 
+        
+        //Quit Button Event
         public void SaveOnClose(object sender, CancelEventArgs e)
         {
             SavePaths();

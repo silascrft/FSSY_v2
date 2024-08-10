@@ -22,7 +22,8 @@
                     <TextBlock>Play</TextBlock>
                 </Button>
                 <Button 
-                    Style="{StaticResource MenuButton}">
+                    Style="{StaticResource MenuButton}"
+                    Click="RunTickedPaths">
                     <TextBlock>Synchronize</TextBlock>
                 </Button>
                 <Button 

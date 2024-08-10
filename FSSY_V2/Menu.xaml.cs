@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace FSSY_V2
 {
@@ -65,6 +66,10 @@ namespace FSSY_V2
         }
         private void LoadCheckBoxStates()
         {
+
+            
+
+
             var state = _savegameStates.Load();
 
             CheckBox1.IsChecked = state.CheckBox1;
@@ -88,5 +93,23 @@ namespace FSSY_V2
             CheckBox19.IsChecked = state.CheckBox19;
             CheckBox20.IsChecked = state.CheckBox20;
         }
+
+        private void RunTickedPaths(object sender, RoutedEventArgs e)
+        {
+            // Definieren Sie den Pfad zur .exe-Datei
+            string exePath = @"C:\Program Files\FreeFileSync\FreeFileSync.exe";
+
+            // Pfad zur Batch-Datei
+            string savegamePath1 = @"C:\Users\Silas\Documents\FreeFile Synch Batch Files\FS22Savames\FS22_savegame1_GoogleDrive3_BatchRun.ffs_batch";
+
+            if (CheckBox1.IsChecked == true)
+            {
+                // Setze den Pfad zur Batch-Datei in Anführungszeichen
+                string arguments = $"\"{savegamePath1}\"";
+                Process.Start(exePath, arguments);
+            }
+        }
+
     }
+
 }
